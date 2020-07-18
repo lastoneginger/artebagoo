@@ -1,0 +1,224 @@
+/* Mixins*/
+$width: 100%;
+$height: 25em;
+$position: relative;
+$display: flex;
+$justify-content: center;
+$align-items: center;
+
+@mixin properties($position, $display, $justify-content, $align-items) {
+    position: $position;
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin sizes-box($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.main__container {
+    @include sizes-box($width, $height);
+    @include properties($position, $display, $justify-content, $align-items);
+    padding: $padding-inside;
+    color: $color-cultured;
+    border-radius: $boder-radius-outside;
+}
+.bg {
+    background: url(../img/img2/Corazon.png) repeat top/81.5px;
+    background-origin: border-box;
+    animation: mymove1 20s linear infinite;
+}
+    @keyframes mymove1 {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 0% 100%;
+        }
+    }
+.bg2 {
+    background: url(../img/img2/gamecolor.png) repeat top/68px;
+    background-origin: border-box;
+    animation: mymove2 20s linear infinite;
+}
+    @keyframes mymove2 {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 0%;
+        }
+    }
+
+.main__container2 {
+    @include properties($position, $display, $justify-content, $align-items);
+    padding: $padding-inside;
+    color: $color-cultured;
+}
+.main-container-info {
+    padding: 1em;
+    background-image: $border-gradient-4;
+    box-shadow: $box-shadow;
+    border-radius: $boder-radius-outside;
+}
+.main-container-img {
+    top: 150px;
+    right: -20px;
+    position: absolute;
+    z-index: -1;
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+.main__container__big {
+    @include sizes-box($width, $height);
+    padding-top: 0.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $padding-inside;
+    color: $color-cultured;
+    border: $border;
+    border-image: $border-gradient-2;
+    background-color: $color-gunmental;
+}
+
+.mainIndexImg {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    img {
+        border-radius: $boder-radius-outside;
+    }
+}
+.mainServiceImg1 {
+    background-image: url(../img/img2/disenograficopublicidad.png);
+    background-size: cover;
+    background-color: $color-cultured;
+}
+.mainServiceImg2 {
+    background-image: url(../img/img2/ilustracioncarros.png);
+    background-size: cover;
+    background-color: $color-cultured;
+}
+.mainServiceImg3 {
+    background-image: url(https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-color: $color-cultured;
+}
+
+.service__container {
+    width: 100%;
+    height: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-inside;
+    color: $color-cultured;
+    background-image: url(../img/fondoService1140x288.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: $boder-radius-outside;
+}
+.sectionInfo {
+    width: 100%;
+    text-align: left;
+    border-radius: $boder-radius-outside;
+}
+.sectionInfo-2 {
+    width: 50%;
+    text-align: left;
+    border-radius: $boder-radius-outside;
+}
+@media only screen and (max-width: 576px){
+    .sectionInfo-2 {
+        width: 100%;
+    }
+}
+.img-carousel {
+    width: 100%;
+    height: 100%;
+}
+.slider-container {
+    position: relative;
+    .slider-info {
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        top: 250px;
+        left: 200px;
+        padding: 1em;
+        color: $color-cultured;
+        background-image: $border-gradient-4;
+        border-radius: $boder-radius-outside;
+    }
+}
+
+/* Portfolio  bucle works */
+.portfolio-div {
+    width: 100%;
+    height: auto;
+}
+.portfolio-1 {
+    width: 100%;
+    height: 50vh;
+}
+.portfolio-2 {
+    width: 100%;
+    height: 50vh;
+}
+@media only screen and (max-width: 576px){
+    .portfolio-2 {
+        width: 25wh;
+        height: 40vh;
+    }
+}
+
+/* Contact me Form */
+.contact-div {
+    padding: $padding-inside;
+    border: $border;
+    border-image: $border-gradient-3;
+}
+.contact-container {
+    width: 50%;
+    height: auto;
+    color: $color-cultured;
+}
+@media only screen and (max-width: 576px){
+    .contact-container {
+        width: 100%;
+    }
+}
+
+//Swiper-Bundle Sliders de items 
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

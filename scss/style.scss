@@ -1,0 +1,28 @@
+@import "utilities/variables";
+@import "base/typo";
+@import "layout/section";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/forms";
+@import "utilities/icons";
+@import "layout/articles";
+@import "utilities/interpolations";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  position: relative;
+    background-color: $color-gunmental;
+    font-size: $font-size;
+}
+
+.margin-none {
+  padding: 0;
+}
+
+body, html {
+  animation: content_reveal 0.8s ease;
+}
