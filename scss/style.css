@@ -144,7 +144,7 @@
   height: 25em;
   background-image: url(../img/img2/disenograficopublicidad.png);
   background-size: cover;
-  background-color: #303841;
+  background-color: #f2f2f2;
 }
 
 .mainServiceImg2 {
@@ -152,7 +152,7 @@
   height: 25em;
   background-image: url(../img/img2/ilustracioncarros.png);
   background-size: cover;
-  background-color: #303841;
+  background-color: #f2f2f2;
 }
 
 .mainServiceImg3 {
@@ -160,7 +160,7 @@
   height: 25em;
   background-image: url(https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-size: cover;
-  background-color: #303841;
+  background-color: #f2f2f2;
 }
 
 .service__contain {
@@ -209,7 +209,7 @@
   top: 250px;
   left: 200px;
   padding: 1em;
-  color: #303841;
+  color: #f2f2f2;
   background-image: linear-gradient(to right, #006699, #303841);
   border-radius: 0.5em;
 }
@@ -250,7 +250,7 @@
 .contact-container {
   width: 50%;
   height: auto;
-  color: #303841;
+  color: #f2f2f2;
 }
 
 @media only screen and (max-width: 576px) {
@@ -360,7 +360,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #303841;
+  color: #f2f2f2;
   background-color: black;
 }
 
@@ -411,7 +411,7 @@
   flex-direction: column;
   position: relative;
   padding: 0.85em;
-  color: #303841;
+  color: #f2f2f2;
   border-radius: 0.5em;
   background-image: linear-gradient(to top, #006699, #303841);
 }
@@ -573,7 +573,7 @@
 
 body {
   position: relative;
-  background-color: #303841;
+  background-color: #f2f2f2;
   font-size: 16px;
 }
 
