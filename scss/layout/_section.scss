@@ -73,6 +73,7 @@ $align-items: center;
     background-image: $border-gradient-4;
     box-shadow: $box-shadow;
     border-radius: $boder-radius-outside;
+    color: $color-cultured;
 }
 .main-container-img {
     top: 150px;
@@ -91,7 +92,7 @@ $align-items: center;
     display: flex;
     flex-direction: column;
     padding: $padding-inside;
-    color: $color-darkgrey;
+    color: $color-cultured;
     border: $border;
     border-image: $border-gradient-2;
     background-color: $color-gunmental;
@@ -156,6 +157,7 @@ $align-items: center;
     width: 50%;
     text-align: left;
     border-radius: $boder-radius-outside;
+    color: $color-cultured;
 }
 @media only screen and (max-width: 576px){
     .sectionInfo-2 {
