@@ -21,7 +21,7 @@ $align-items: center;
     @include sizes-box($width, $height);
     @include properties($position, $display, $justify-content, $align-items);
     padding: $padding-inside;
-    color: $color-cultured;
+    color: $color-darkgrey;
     border-radius: $boder-radius-outside;
 }
 .bg {
@@ -66,7 +66,7 @@ $align-items: center;
 .main__container2 {
     @include properties($position, $display, $justify-content, $align-items);
     padding: $padding-inside;
-    color: $color-cultured;
+    color: $color-darkgrey;
 }
 .main-container-info {
     padding: 1em;
@@ -91,7 +91,7 @@ $align-items: center;
     display: flex;
     flex-direction: column;
     padding: $padding-inside;
-    color: $color-cultured;
+    color: $color-darkgrey;
     border: $border;
     border-image: $border-gradient-2;
     background-color: $color-gunmental;
@@ -140,7 +140,7 @@ $align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $color-cultured;
+    color: $color-darkgrey;
     background-image: url(../img/fondoService1140x288.png);
     background-size: cover;
     background-position: center;
@@ -150,6 +150,7 @@ $align-items: center;
     width: 100%;
     text-align: left;
     border-radius: $boder-radius-outside;
+    color: $color-darkgrey;
 }
 .sectionInfo-2 {
     width: 50%;
